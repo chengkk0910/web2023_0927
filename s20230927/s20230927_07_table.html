@@ -17,10 +17,20 @@
             color:green;
         }
 
-        /* id */
+        /* clss */
         .testClass{
             color:blue;
         }
+        table , tr , td{
+            border: 1px solid red;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table{
+            width: 80%;
+        }
+        
     </style>
     
 </head>
@@ -30,7 +40,7 @@
     <h1>table picsum</h1>
     <h3 id="testID">test id h3</h3>
     <h3 class="testClass">test id h3</h3>
-    <table border="1" width="100%">
+    <table>
         <tr>
             <th>No.</th>
             <th>圖片介紹</th>
@@ -39,8 +49,8 @@
         <!-- table row -->
         <tr>
             <!-- table data -->
-            <td width="5%">1</td>
-            <td width="70%">
+            <td>1</td>
+            <td>
                 <a href="./views/f1.html">
                     <img src="https://picsum.photos/id/20/400/300" alt="" srcset="">
                 </a>
