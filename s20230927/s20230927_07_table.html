@@ -5,23 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
+    <!-- css 語法 -->
+    <style>
+        /* element */
+        h1{
+            color: red;
+        }
+
+        /* id */
+        #testID{
+            color:green;
+        }
+
+        /* id */
+        .testClass{
+            color:blue;
+        }
+    </style>
+    
 </head>
+
 
 <body>
     <h1>table picsum</h1>
-    <table>
+    <h3 id="testID">test id h3</h3>
+    <h3 class="testClass">test id h3</h3>
+    <table border="1" width="100%">
+        <tr>
+            <th>No.</th>
+            <th>圖片介紹</th>
+            <th>文字介紹</th>
+        </tr>
         <!-- table row -->
         <tr>
             <!-- table data -->
-            <td>1</td>
-            <td>
+            <td width="5%">1</td>
+            <td width="70%">
                 <a href="./views/f1.html">
                     <img src="https://picsum.photos/id/20/400/300" alt="" srcset="">
                 </a>
             </td>
-            <td>美味的中式料理F</td>
+            <td>美味的中式料理</td>
         </tr>
-        
+        <tr>
+            <!-- table data -->
+            <td>2</td>
+            <td>
+                <a href="./views/f2.html">
+                    <img src="https://picsum.photos/id/30/400/300" alt="" srcset="">
+                </a>
+            </td>
+            <td>日式料理</td>
+        </tr>
+        <tr>
+            <!-- table data -->
+            <td>3</td>
+            <td>
+                <a href="./views/f3.html">
+                    <img src="https://picsum.photos/id/40/400/300" alt="" srcset="">
+                </a>
+            </td>
+            <td>法式料理</td>
+        </tr>
+
     </table>
 
     <!-- 訂位餐廳 -->
