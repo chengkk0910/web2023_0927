@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td {
+            /* width: 100%  ; */
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {}
+
+        .h-20 {
+            height: 20vh;
+        }
+
+        .h-70 {
+            /* vh viewpoint */
+            height: 70vh;
+        }
+
+        .h-90 {
+            /* vh viewpoint */
+            height: 90vh;
+        }
+
+       
+
+        .w-25 {
+            width: 25%;
+        }
+        .w-30 {
+            width: 30%;
+        }
+        .w-50 {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>康乃爾筆記</h3>
+        <table>
+            <tr>
+                <td class="h-70 w-30">11</td>
+                <td class="h-70">12</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="h-20">21</td>
+                <!-- <td>22</td> -->
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h3>東大筆記</h3>
+        <table>
+            <tr>
+                <td class="w-50 h-90">11</td>
+                <td class="w-25">12</td>
+                <td>13</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
