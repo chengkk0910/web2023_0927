@@ -5,23 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <h3>form</h3>
+        <h3 class="text-center">Form</h3>
+        <div class="box">
+            <form action="">
+                <p>
+                    <label for="name">&nbsp;&nbsp;Name</label>
+                    <input type="text" name="" id="name">
+                </p>
+                <p>
+                    <label for="mobile">Mobile</label>
+                    <input type="text" name="" id="mobile">
+                </p>
+                <p>
+                    <input type="reset" value="重整">
+                    <input type="submit" value="送出">
+                </p>
+            </form>
+        </div>
 
-        <form action="">
-            <p>
-                <input type="text" name="" id="">
-            </p>
-            <p>
-                <input type="text" name="" id="">
-            </p>
-            <p>
-                <input type="text" name="" id="">
-            </p>
-        </form>
+
 
     </div>
 </body>
