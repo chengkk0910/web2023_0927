@@ -24,7 +24,9 @@
             width: 100%;
         }
 
-        td {}
+        td {
+            vertical-align: text-top;
+        }
 
         .h-20 {
             height: 20vh;
@@ -40,17 +42,24 @@
             height: 90vh;
         }
 
-       
+
 
         .w-25 {
             width: 25%;
         }
+
         .w-30 {
             width: 30%;
         }
+
         .w-50 {
             width: 50%;
         }
+
+        .text-red{
+            color: red;
+        }
+
     </style>
 </head>
 
@@ -59,11 +68,29 @@
         <h3>康乃爾筆記</h3>
         <table>
             <tr>
-                <td class="h-70 w-30">11</td>
-                <td class="h-70">12</td>
+                <td class="h-70 w-30">
+                    <h4 class="text-red">Lorem, ipsum dolor.</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet qui perferendis dicta
+                        ipsum consectetur, repellendus id cumque deleniti ad.
+                    </p>
+                </td>
+                <td class="h-70">
+                    <h4 class="text-red">Lorem, ipsum dolor.</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet qui perferendis dicta
+                        ipsum consectetur, repellendus id cumque deleniti ad.
+                    </p>
+                </td>
             </tr>
             <tr>
-                <td colspan="2" class="h-20">21</td>
+                <td colspan="2" class="h-20">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet qui perferendis dicta
+                        ipsum consectetur, repellendus id cumque deleniti ad.
+                    </p>
+                </td>
                 <!-- <td>22</td> -->
             </tr>
         </table>
@@ -76,6 +103,24 @@
         <table>
             <tr>
                 <td class="w-50 h-90">11</td>
+                <td class="w-25">12</td>
+                <td>13</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h3>麥肯錫筆記</h3>
+        <table>
+            <tr>
+                <td colspan="3" class="h-20">01</td>
+                <!-- <td>02</td>
+                <td>03</td> -->
+            </tr>
+            <tr>
+                <td class="w-50 h-70">11</td>
                 <td class="w-25">12</td>
                 <td>13</td>
             </tr>
