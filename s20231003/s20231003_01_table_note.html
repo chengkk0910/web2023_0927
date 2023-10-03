@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .nav {
+            text-align: center;
+        }
+
         .container {
             width: 80%;
             margin: auto;
@@ -56,14 +60,25 @@
             width: 50%;
         }
 
-        .text-red{
+        .text-red {
             color: red;
         }
 
+        .top {
+            /* background-color: red; */
+            float: right;
+        }
     </style>
 </head>
 
 <body>
+    <!-- navigation -->
+    <div class="nav">
+        <a href="#item1">康乃爾筆記</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#item2">東大筆記</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#item3">麥肯錫筆記</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div id="item1"></div>
     <div class="container">
         <h3>康乃爾筆記</h3>
         <table>
@@ -95,9 +110,11 @@
             </tr>
         </table>
     </div>
+    <a href="#" class="top">top</a>
     <br>
     <hr>
     <br>
+    <div id="item2"></div>
     <div class="container">
         <h3>東大筆記</h3>
         <table>
@@ -108,9 +125,11 @@
             </tr>
         </table>
     </div>
+    <a href="#" class="top">top</a>
     <br>
     <hr>
     <br>
+    <div id="item3"></div>
     <div class="container">
         <h3>麥肯錫筆記</h3>
         <table>
@@ -126,6 +145,7 @@
             </tr>
         </table>
     </div>
+    <a href="#" class="top">top</a>
 </body>
 
 </html>
