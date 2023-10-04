@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            單行文字
+        </h3>
+        <p>
+            <input type="text" value="55688" name="myText">
+        </p>
+    </div>
+    <div class="container">
+        <h3>
+            數字
+        </h3>
+        <p>
+            <input type="number" name="myNumber" value="123">
+        </p>
+    </div>
+    <div class="container">
+        <h3>
+            日期
+        </h3>
+        <p>
+            <input type="date" value="2023-01-01" name="myDate">
+        </p>
+    </div>
+    <div class="container">
+        <h3 class="text-red">
+            下拉選單
+        </h3>
+        <p>
+            <select name="mySelect" id="">
+                <option value="">請選擇</option>
+                <option value="s1">s1</option>
+                <option value="s2">s2</option>
+                <option value="s3">s3</option>
+                <option value="s4">s4</option>
+            </select>
+        </p>
+    </div>
+    <div class="container">
+        <h3 class="text-red">
+            radio 單選
+        </h3>
+        <p>
+            <input type="radio" name="myRadio" id="item1">
+            <label for="item1">item1</label>
+            <input type="radio" name="myRadio" id="item2">
+            <label for="item2">item2</label>
+            <input type="radio" name="myRadio" id="item3">
+            <label for="item3">item3</label>
+        </p>
+    </div>
+    <div class="container">
+        <h3 class="text-red">
+            checkbox 單選
+        </h3>
+        <!-- [] 代表 陣列array 多選 -->
+        <input type="checkbox" name="myCheckbox[]" id="check1">
+        <label for="check1">html</label>
+        <input type="checkbox" name="myCheckbox[]" id="check2">
+        <label for="check2">css</label>
+        <input type="checkbox" name="myCheckbox[]" id="check3">
+        <label for="check3">php</label>
+
+    </div>
+
+    <div class="container">
+        <h3>
+            submit
+        </h3>
+        <input type="submit" value="submit">
+    </div>
+
+    <div class="container">
+        <h3>
+            reset
+        </h3>
+        <input type="reset" value="reset">
+    </div>
+
+    <div class="container">
+        <h3>
+            password
+        </h3>
+        <input type="password">
+    </div>
+
+    <div class="container">
+        <h3>
+            textarea
+        </h3>
+        <!-- pre -->
+        <textarea name="myTextarea" id="" cols="80" rows="10">
+            hello 123
+            hello 456
+        </textarea>
+    </div>
+
+    <div class="container">
+        <!-- file 1.post 2.enctype -->
+        <!-- php $_['FILE'] -->
+
+        <!-- 平信 get / 掛號 post -->
+        <!-- 不安全 get / 安全 post-->
+        <form action="" method="post" enctype="multipart/form-data">
+            <h3>
+                file
+            </h3>
+            <input type="file" name="" id="">
+        </form>
+    </div>
+
+    
+    <div class="container">
+        <h3>
+            hidden
+        </h3>
+        <input type="hidden" value="不告訴你">
+    </div>
+
+
+</body>
+
+</html>
