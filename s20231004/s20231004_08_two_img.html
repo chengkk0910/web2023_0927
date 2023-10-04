@@ -7,8 +7,8 @@
     <title>Document</title>
     <style>
         body{
-            background-image: url('./images/01.jpg');
-            background-size: 100px 100px;
+            /* background-image: url('./images/01.jpg');
+            background-size: 100px 100px; */
         }
         .box {
             /* 高度寬度 要先設定 */
@@ -19,6 +19,18 @@
             width: 1200px;
             height: 800px;
             background-color: red;
+        }
+
+        .clickDiv{
+            background-image: url('./images/01.jpg');
+            background-size: 100px 100px;
+            width: 100px;
+            height: 100px;
+            /* background-color: green; */
+        }
+        .aImg{
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
@@ -34,6 +46,22 @@
         <div class="box">
 
         </div>
+    </div>
+
+    <div class="container">
+        <h3>link bg-image</h3>
+        <a href="">
+            <div class="clickDiv">
+
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <h3>link img</h3>
+        <a href="">
+            <img src="./images/01.jpg" alt="" class="aImg">
+        </a>
     </div>
 </body>
 
