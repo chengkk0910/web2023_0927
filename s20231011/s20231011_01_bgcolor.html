@@ -48,14 +48,24 @@
             width: 33%;
             height: 50%;
         }
-        img{
+
+        .my-img {
+            text-align: center;
+        }
+
+        img {
             width: 120px;
             height: 150px;
             opacity: 0.5;
+        }
 
-            position: relative;           
-            left:0px;
-            top:0px;
+        .my-iframe {
+            text-align: center;
+        }
+
+        iframe {
+            width: 80%;
+            height: 50%;
         }
     </style>
 </head>
@@ -65,7 +75,9 @@
         <table>
             <tr>
                 <td>
-                    <img src="./images/03.png" alt="" srcset="">
+                    <div class="my-img">
+                        <img src="./images/03.png" alt="" srcset="">
+                    </div>
                 </td>
                 <td>
                     <img src="./images/03.png" alt="" srcset="">
@@ -79,7 +91,12 @@
                     <img src="./images/03.png" alt="" srcset="">
                 </td>
                 <td>
-                    <img src="./images/03.png" alt="" srcset="">
+                    <div class="my-iframe">
+                        <iframe src="https://www.youtube.com/embed/L0MK7qz13bU?si=2P0oO9xyNgOHKhA9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </td>
                 <td>
                     <img src="./images/03.png" alt="" srcset="">
