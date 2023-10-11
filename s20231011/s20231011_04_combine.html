@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1>p {
+            color: red;
+        }
+
+        .div2>p {
+            color: green;
+        }
+
+        /* 空格 非常強大 但會影響太多 */
+        /* 建議少用 空格  */
+        .div3 p {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            div 1
+            <p>
+                &nbsp;&nbsp;p11 Lorem, ipsum dolor.
+            </p>
+        </div>
+        <div class="div2">
+            div 2
+            <p>
+                &nbsp;&nbsp;p21 Lorem, ipsum dolor.
+            </p>
+        </div>
+        <div class="div3">
+            div 3
+            <div class="div31">
+                &nbsp;&nbsp;div 31
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;p311 Lorem, ipsum dolor.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
