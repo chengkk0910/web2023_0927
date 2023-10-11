@@ -92,21 +92,23 @@
         }
 
         .nav {
-            text-align: center;
+            /* text-align: center; */
+            position: fixed;
+            top:0;            
         }
 
         a {
             /* 調整高度 */
             display: inline-block;
-            font-size: 40px;
+            font-size: 28px;
             /* 跟上面的距離 */
-            margin-top: 10px;
+            margin-top: 20px;
             /* 跟左邊的距離 */
             margin-left: 30px;
             /* 去除a tag 下底線 */
             text-decoration: none;
-            color: aliceblue;
-            background-color: lightskyblue;
+            color: black;
+            /* background-color: lightskyblue; */
         }
 
         #top {
@@ -120,9 +122,9 @@
 
 <body>
     <div class="nav">
-        <a href="#item1">item1</a>
-        <a href="#item2">item2</a>
-        <a href="#item3">item3</a>
+        <a href="#item1">Photo</a>
+        <a href="#item2">Youtube</a>
+        <a href="#item3">Map</a>
     </div>
     <br>
     <div id="item1"></div>
