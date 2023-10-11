@@ -6,33 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container  {
+        .container {
             /* width: 300px; */
             /* height: 300px; */
             width: 80%;
             height: 95vh;
             margin: auto;
-            
+            /* opacity: 0.1; */
+
         }
-        .box1{
+
+        .box1 {
             background-color: lightblue;
-            background-image:  url('./images/02.png') , url('./images/01.png');
+            background-image: url('./images/02.png'), url('./images/01.png');
             background-repeat: no-repeat;
-            background-position: right top , left bottom;
+            background-position: right top, left bottom;
         }
-        .box2{
+
+        .box2 {
             width: 20%;
             background-color: lightblue;
             background-image: url('./images/01.png');
             background-repeat: no-repeat;
-            
+
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            opacity: 1;
+        }
+
+        table {
+            width: 80%;
+            height: 80vh;
+            margin: auto;
+        }
+
+        td {
+            width: 33%;
+            height: 50%;
+        }
+        img{
+            width: 120px;
+            height: 150px;
+            opacity: 0.5;
+            position: relative;           
+            left:100px;
+            top:30px;
         }
     </style>
 </head>
 
 <body>
     <div class="container box1">
-
+        <table>
+            <tr>
+                <td>
+                    <img src="./images/03.png" alt="" srcset="">
+                </td>
+                <td>
+                    <img src="./images/03.png" alt="" srcset="">
+                </td>
+                <td>
+                    <img src="./images/03.png" alt="" srcset="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/03.png" alt="" srcset="">
+                </td>
+                <td>
+                    <img src="./images/03.png" alt="" srcset="">
+                </td>
+                <td>
+                    <img src="./images/03.png" alt="" srcset="">
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="container box2">
 
