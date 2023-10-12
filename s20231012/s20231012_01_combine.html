@@ -54,6 +54,16 @@
         .divA>div {
             color: red;
         }
+
+        /*  只會影響next兄弟姊妹 一個 */
+        .silbling+p {
+            color: greenyellow;
+        }
+
+        /*  只會影響next兄弟姊妹 全部 */
+        .silbling~p {
+            color: greenyellow;
+        }
     </style>
 </head>
 
@@ -161,6 +171,29 @@
             </div>
         </div>
 
+
+        <br>
+        <hr><br>
+        <h3>+ 兄弟</h3>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <div class="silbling">
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
         <!-- 
             .class box3   find('.test')
          -->
