@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table,
+            tr,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th,td {
+                width: 50%;
+            }
+            .money::before{
+                content: "$ ";
+            }
+            .money::after{
+                content: " 元";
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>bonus</th>
+                </tr>
+                <tr>
+                    <td>Amy</td>
+                    <td class="money">5000</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td class="money">6000</td>
+                </tr>
+                <tr>
+                    <td>Cat</td>
+                    <td class="money">10000</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
