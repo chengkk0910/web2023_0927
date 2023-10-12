@@ -29,8 +29,11 @@
                 width: 100%;
             }
 
-            th,td {
-                width: 50%;
+            /* th,td {
+                width: 20%;
+            } */
+            .money{
+                text-align: right;
             }
             .money::before{
                 content: "$ ";
@@ -45,20 +48,24 @@
         <div class="container">
             <table>
                 <tr>
-                    <th>name</th>
-                    <th>bonus</th>
+                    <th width="15%">name</th>
+                    <th width="20%">bonus</th>
+                    <th>備註</th>
                 </tr>
                 <tr>
                     <td>Amy</td>
                     <td class="money">5000</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Bob</td>
                     <td class="money">6000</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Cat</td>
                     <td class="money">10000</td>
+                    <td></td>
                 </tr>
             </table>
         </div>
