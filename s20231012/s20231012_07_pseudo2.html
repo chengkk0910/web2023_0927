@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            width: 100%;
+        }
+
+        .nav>a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        .nav>a:hover {
+            color: red;
+            font-size: 22px;
+            border-radius: 20px;
+            background-color: #ccc;
+            transition-duration: 0.5s;
+        }
+
+        .box {
+            display: inline-block;
+            margin: auto;
+            width: 10%;
+            height: 10vh;
+            background-image: url('https://picsum.photos/id/20/400/300');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50px;
+        }
+
+        .box:hover {
+            background-image: url('https://picsum.photos/id/22/400/300');
+            transition-duration: 1s;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Other</a>
+    </div>
+    <br>
+    <div class="container">
+        <a href="http://tw.yahoo.com">
+            <div class="box">
+
+            </div>
+        </a>
+        <a href="http://tw.yahoo.com">
+            <div class="box">
+
+            </div>
+        </a>
+        <a href="http://tw.yahoo.com">
+            <div class="box">
+
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
