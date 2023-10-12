@@ -27,21 +27,29 @@
             transition-duration: 0.5s;
         }
 
+        .container{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
         .box {
-            display: inline-block;
-            margin: auto;
-            width: 10%;
+            margin-left: 30px;
+            width: 50px;
             height: 10vh;
             background-image: url('https://picsum.photos/id/20/400/300');
             background-repeat: no-repeat;
             background-size: cover;
-            border-radius: 50px;
+            border-radius: 30px;
         }
 
         .box:hover {
+            margin-left: 30px;
+            width: 55px;
+            height: 15vh;
             background-image: url('https://picsum.photos/id/22/400/300');
             transition-duration: 1s;
             border-radius: 10px;
+
         }
     </style>
 </head>
@@ -55,19 +63,13 @@
     <br>
     <div class="container">
         <a href="http://tw.yahoo.com">
-            <div class="box">
-
-            </div>
+            <div class="box"></div>
         </a>
         <a href="http://tw.yahoo.com">
-            <div class="box">
-
-            </div>
+            <div class="box"></div>
         </a>
         <a href="http://tw.yahoo.com">
-            <div class="box">
-
-            </div>
+            <div class="box"></div>
         </a>
     </div>
 </body>
