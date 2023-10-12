@@ -45,6 +45,21 @@
             .status::after{
                 content: " %";
             }
+            .status[data-level="1"]{
+                color:red;
+            }
+
+            input[type="text"]{
+                background-color: lightskyblue;
+            }
+
+            p[class^="iphone14"]{
+                background-color: green;
+            }
+
+            p[class^="iphone15"]{
+                background-color: lightpink;
+            }
         </style>
     </head>
 
@@ -72,10 +87,45 @@
                 <tr>
                     <td>Cat</td>
                     <td class="money">10000</td>
-                    <td class="status">80</td>
+                    <td class="status" data-level="1">80</td>
                     <td></td>
                 </tr>
             </table>
+        </div>
+
+        <br><hr><br>
+        <div class="container">
+            <form action="" method="get">
+                <p>
+                    <label for=""></label>
+                    <input type="text" name="" id="">
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="text" name="" id="">
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="text" name="" id="">
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="number" name="" id="">
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="number" name="" id="">
+                </p>
+            </form>
+        </div>
+
+        <br><hr><br>
+        <div class="container">
+            <p class="iphone14 text-red">Lorem ipsum dolor sit amet.</p>
+            <p class="iphone14-pro text-red">Lorem ipsum dolor sit amet.</p>
+
+            <p class="iphone15 text-red">Lorem ipsum dolor sit amet.</p>
+            <p class="iphone15-pro text-red">Lorem ipsum dolor sit amet.</p>
         </div>
     </body>
 
