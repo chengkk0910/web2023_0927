@@ -28,7 +28,7 @@
         td {
             height: 30px;
         }
-        
+
         .bg-red {
             background-color: #ccc;
         }
@@ -38,15 +38,23 @@
         }
 
         /* nth + odd or nth + even */
-        tr:nth-child(odd){
-            color:blue;
+        tr:nth-child(odd) {
+            color: blue;
+        }
+
+        .text-right {
+            text-align: right;            
+        }
+        .text-right> a{
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container text-right">
         <h3>student list</h3>
+        <a href="./create.html">Add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         <table>
             <tr class="bg-red">
                 <th>id</th>
