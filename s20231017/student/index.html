@@ -42,15 +42,24 @@
             color: blue;
         }
 
-        tr:nth-child(1){
+        tr:nth-child(1) {
             color: black;
         }
 
         .text-right {
-            text-align: right;            
+            text-align: right;
         }
-        .text-right> a{
+
+        .text-right>a {
             text-decoration: none;
+        }
+        .text-green > a {
+            color:green;
+            text-decoration: none;
+        }
+
+        h3 {
+            text-align: center;
         }
     </style>
 </head>
@@ -65,6 +74,7 @@
                 <th>name</th>
                 <th>mobile</th>
                 <th>pic</th>
+                <th>oprate</th>
             </tr>
             <tr>
                 <td>1</td>
@@ -75,55 +85,32 @@
                     <br>
                     amy.jpg
                 </td>
+                <td class="text-green">
+                    <a href="./edit.html?id=1">edit</a>
+                    <a href="./del.html?id=1">Del</a>
+                </td>
             </tr>
             <tr class="bg-pink">
                 <td>2</td>
                 <td><a href="./edit.html?id=2">bob</a></td>
                 <td>0922-222-222</td>
                 <td>bob.jpg</td>
+                <td class="text-green">
+                    <a href="./edit.html?id=2">edit</a>
+                    <a href="./del.html?id=2">Del</a>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td><a href="./edit.html?id=3">cat</a></td>
                 <td>0933-333-333</td>
                 <td>cat.jpg</td>
+                <td class="text-green">
+                    <a href="./edit.html?id=3">edit</a>
+                    <a href="./del.html?id=3">Del</a>
+                </td>
             </tr>
-            <tr class="bg-pink">
-                <td>1</td>
-                <td><a href="./edit.html?id=1">amy</a></td>
-                <td>0911-111-111</td>
-                <td>amy.jpg</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><a href="./edit.html?id=2">bob</a></td>
-                <td>0922-222-222</td>
-                <td>bob.jpg</td>
-            </tr>
-            <tr class="bg-pink">
-                <td>3</td>
-                <td><a href="./edit.html?id=3">cat</a></td>
-                <td>0933-333-333</td>
-                <td>cat.jpg</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td><a href="./edit.html?id=1">amy</a></td>
-                <td>0911-111-111</td>
-                <td>amy.jpg</td>
-            </tr>
-            <tr class="bg-pink">
-                <td>2</td>
-                <td><a href="./edit.html?id=2">bob</a></td>
-                <td>0922-222-222</td>
-                <td>bob.jpg</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><a href="./edit.html?id=3">cat</a></td>
-                <td>0933-333-333</td>
-                <td>cat.jpg</td>
-            </tr>
+            
         </table>
     </div>
 </body>
