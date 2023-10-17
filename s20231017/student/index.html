@@ -14,6 +14,7 @@
 
         table,
         tr,
+        th,
         td {
             border: 1px solid black;
             border-collapse: collapse;
@@ -27,6 +28,10 @@
         td {
             height: 30px;
         }
+        
+        .bg-red {
+            background-color: #ccc;
+        }
 
         .bg-pink {
             background-color: lightpink;
@@ -38,11 +43,11 @@
     <div class="container">
         <h3>student list</h3>
         <table>
-            <tr>
-                <td>id</td>
-                <td>name</td>
-                <td>mobile</td>
-                <td>pic</td>
+            <tr class="bg-red">
+                <th>id</th>
+                <th>name</th>
+                <th>mobile</th>
+                <th>pic</th>
             </tr>
             <tr>
                 <td>1</td>
