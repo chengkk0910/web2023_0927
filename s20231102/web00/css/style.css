@@ -3,93 +3,105 @@
     box-sizing: border-box;
     /* overflow: hidden;
      */
-    
-}
-body{
-   
+
 }
 
-.container-box{
+body {}
+
+.container-box {
     width: 1024px;
     height: 768px;
-    margin:auto;
+    margin: auto;
     /* background-color: aquamarine; */
 }
 
-.header{
-    width: 1024px;    
+.header {
+    width: 1024px;
     height: 65px;
     /* background-color: thistle; */
-    margin:auto;
+    margin: auto;
     border: 1px solid black;
     border-bottom: 0;
     text-align: center;
     padding-top: 2px;
 }
 
-.header>img{
-}
+.header>img {}
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     width: 1024px;
-    margin:auto;
+    margin: auto;
 }
 
-.aside{
+.aside {
     width: 215px;
     height: calc(768px - 65px - 20px);
     /* background-color: red; */
     border: 1px solid black;
-    border-right:0;
+    border-right: 0;
     display: flex;
     flex-direction: column;
+    font-family: '標楷體';
 
-    
+
 }
 
-.aside-header{
+.aside-header {
     /* width: 215px; */
     height: calc(100% - 25px);
     /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.aside-header > .box {
-    width: 100px;
+.aside-title {
+    /* width: 200px; */
+    /* background-color: red; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF00FF;
+    /* text-decoration:underline black;
+    text-underline-offset: 10px; */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.aside-header>.box {
+    width: 200px;
     height: 35px;
     /* background-color: aquamarine; */
     background-image: url('../images/menu1.png');
     text-align: center;
     padding-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid black
+    /* border: 1px solid black */
     /* border-radius: 10px; */
 }
 
-.aside-footer{
+.aside-footer {
     height: 25px;
     font-size: 16px;
     color: #0000FF;
     font-family: '標楷體';
     text-align: center;
-    
+
     /* background-color: lightblue; */
 }
 
 
-.main{
+.main {
     width: calc(1024px - 215px);
     /* height: calc(768px - 65px - 20px); */
     /* background-color: green; */
     border: 1px solid black;
 }
 
-.main-header{
+.main-header {
     /* width: 215px; */
     height: 29px;
     font-size: 24px;
@@ -101,18 +113,18 @@ body{
     /* background-color: lightcyan; */
 }
 
-.main-footer{
+.main-footer {
     height: calc(100% - 29px);
     /* background-color: lightpink; */
 }
 
 
-.footer{
-    border-top:0;
+.footer {
+    border-top: 0;
     width: 1024px;
     height: 20px;
     /* background-color: blue; */
-    margin:auto;
+    margin: auto;
     border: 1px solid black;
 
 }
