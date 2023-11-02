@@ -30,14 +30,43 @@ body{
     background-color: red;
     border: 1px solid black;
     border-right:0;
+    display: flex;
+    flex-direction: column;
+
     
 }
+
+.aside-header{
+    /* width: 215px; */
+    height: calc(100% - 25px);
+    background-color: blueviolet;
+}
+
+.aside-footer{
+    height: 25px;
+    background-color: lightblue;
+}
+
+
 .main{
     width: calc(1024px - 215px);
-    height: calc(768px - 65px - 20px);
+    /* height: calc(768px - 65px - 20px); */
     background-color: green;
     border: 1px solid black;
 }
+
+.main-header{
+    /* width: 215px; */
+    height: 29px;
+    background-color: lightcyan;
+}
+
+.main-footer{
+    height: calc(100% - 29px);
+    background-color: lightpink;
+}
+
+
 .footer{
     border-top:0;
     width: 1024px;
