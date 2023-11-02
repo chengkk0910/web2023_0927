@@ -79,8 +79,23 @@ body {}
     text-align: center;
     padding-top: 5px;
     margin-bottom: 10px;
+    font-size: 16px;
     /* border: 1px solid black */
     /* border-radius: 10px; */
+}
+
+.aside-header>.box:hover {
+    background-image: url('../images/menu2.png');
+}
+
+
+
+.aside-header>.box>a {
+    text-decoration: none;
+}
+
+.a-first {
+    text-decoration: underline;
 }
 
 .aside-footer {
@@ -116,6 +131,10 @@ body {}
 .main-footer {
     height: calc(100% - 29px);
     /* background-color: lightpink; */
+}
+
+iframe{
+    width: 100%;
 }
 
 
