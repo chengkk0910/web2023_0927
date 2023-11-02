@@ -8,10 +8,17 @@ body{
    
 }
 
+.container-box{
+    width: 1024px;
+    height: 768px;
+    margin:auto;
+    /* background-color: aquamarine; */
+}
+
 .header{
     width: 1024px;    
     height: 65px;
-    background-color: thistle;
+    /* background-color: thistle; */
     margin:auto;
     border: 1px solid black;
     border-bottom: 0;
@@ -27,7 +34,7 @@ body{
 .aside{
     width: 215px;
     height: calc(768px - 65px - 20px);
-    background-color: red;
+    /* background-color: red; */
     border: 1px solid black;
     border-right:0;
     display: flex;
@@ -39,31 +46,31 @@ body{
 .aside-header{
     /* width: 215px; */
     height: calc(100% - 25px);
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .aside-footer{
     height: 25px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 
 .main{
     width: calc(1024px - 215px);
     /* height: calc(768px - 65px - 20px); */
-    background-color: green;
+    /* background-color: green; */
     border: 1px solid black;
 }
 
 .main-header{
     /* width: 215px; */
     height: 29px;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
 }
 
 .main-footer{
     height: calc(100% - 29px);
-    background-color: lightpink;
+    /* background-color: lightpink; */
 }
 
 
@@ -71,7 +78,7 @@ body{
     border-top:0;
     width: 1024px;
     height: 20px;
-    background-color: blue;
+    /* background-color: blue; */
     margin:auto;
     border: 1px solid black;
 
