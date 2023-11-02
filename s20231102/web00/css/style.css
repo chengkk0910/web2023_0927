@@ -1,3 +1,49 @@
-h1{
-    color:red;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+body{
+   
+}
+
+.header{
+    width: 1024px;    
+    height: 65px;
+    background-color: thistle;
+    margin:auto;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    margin:auto;
+}
+
+.aside{
+    width: 215px;
+    height: calc(768px - 65px - 20px);
+    background-color: red;
+    border: 1px solid black;
+    border-right:0;
+    
+}
+.main{
+    width: calc(1024px - 215px);
+    height: calc(768px - 65px - 20px);
+    background-color: green;
+    border: 1px solid black;
+}
+.footer{
+    border-top:0;
+    width: 1024px;
+    height: 20px;
+    background-color: blue;
+    margin:auto;
+    border: 1px solid black;
+
 }
