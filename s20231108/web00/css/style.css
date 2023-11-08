@@ -145,8 +145,8 @@ iframe{
     height: 20px;
     /* background-color: blue; */
     margin: auto;
-    border: 1px solid black;
     border-top: 0;
+    border: 1px solid black;
 
     font-family: "標楷體";
     color: #000000;
