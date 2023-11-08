@@ -146,6 +146,7 @@ iframe{
     /* background-color: blue; */
     margin: auto;
     border: 1px solid black;
+    border-top: 0;
 
     font-family: "標楷體";
     color: #000000;
