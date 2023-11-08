@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: '標楷體';
+            height: 2000px;
+        }
+
+        .container-main {
+            background-image: url('./images/0101.jpg');
+            /* color: red; */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .container-main>p {
+            text-align: left;
+            /* font-weight: bold; */
+            font-size: 16px;
+            /* color: #FF0000; */
+            font-family: '標楷體';
+        }
+
+        .container-main>p:hover {
+            color: blue;
+            background-color: #ccc;
+        }
+
+        .my-title {
+            font-family: '標楷體';
+            text-align: center;
+            font-size: 18px;
+            color: #00FFFF;
+        }
+
+        nav,
+        .container-date {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        nav>div>a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="my-title">吉他社教學內容</div>
+    </header>
+    <nav>
+        <div>
+            <!-- _top　回到iframe上一層 -->
+            <a href="../web00/index.html" target="_top">
+                回社團介紹首頁
+            </a>
+        </div>
+        <div>
+            <a href="./guitar_history.htm.html">
+                吉他社社史
+            </a>
+        </div>
+        <div>
+            <a href="./guitar_event.htm.html">
+                吉他社近期活動公告
+            </a>
+        </div>
+    </nav>
+    <div class="container-main">
+        <p>基礎樂理</p>
+        <p>常用之吉他技巧</p>
+        <p>音程介紹以及音程表內容</p>
+        <p>節奏型態</p>
+        <p>和絃及級數和絃</p>
+        <p>和絃公式</p>
+        <p>轉位複合</p>
+        <p>調音法</p>
+        <p>吉他的保養</p>
+        <p>如何轉調</p>
+    </div>
+
+</body>
+
+</html>
