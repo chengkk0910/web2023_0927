@@ -19,7 +19,10 @@
             background-color: lightblue;
             /* height: 80vh; */
         }
-        
+
+        .input-height {
+            /* height: 300px; */
+        }
     </style>
 </head>
 
@@ -32,7 +35,7 @@
                 </label>
             </div>
             <div class="col-10 col-sm-5">
-                <input type="text" name="name" id="name" class="form-control">
+                <input type="text" name="name" id="name" class="form-control form-control-lg">
             </div>
             <div class="col-2 col-sm-1 pt-2 ps-4 mb-3">
                 <label for="mobile" class="form-label">
@@ -40,7 +43,7 @@
                 </label>
             </div>
             <div class="col-10 col-sm-5">
-                <input type="text" name="mobile" id="mobile" class="form-control">
+                <input type="text" name="mobile" id="mobile" class="form-control input-height">
             </div>
             <div class="col-2 col-sm-1 pt-2 ps-4 mb-3">
                 <label for="address" class="form-label">
@@ -49,6 +52,17 @@
             </div>
             <div class="col-10 col-sm-11">
                 <input type="text" name="address" id="address" class="form-control">
+            </div>
+            <div class="col-2 col-sm-1 pt-2 ps-4 mb-3">
+                <label for="textarea" class="form-label">
+                    textarea
+                </label>
+            </div>
+            <div class="col-10 col-sm-11">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
             </div>
         </div>
     </div>
