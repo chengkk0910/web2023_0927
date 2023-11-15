@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        /* large css */
-        /* .container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            background-color: lightblue;
-            width: 80%;
-            margin:auto;
-            height: 80vh;
-        }
-        .item{            
-            width: 30%;
-            height: 300px;
-            background-color: lightgray;
-        } */
-
         /* mobile css */
-        .container{
+        .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
             background-color: lightblue;
             width: 100%;
-            margin:auto;
-            /* height: 80vh; */
+            margin: auto;
         }
-        .item{
-            border: 3px solid black;            
+
+        .item {
+            border: 3px solid black;
             width: 80%;
             height: 300px;
             background-color: lightgray;
             margin-bottom: 30px;
         }
+
+        /* large css */
+        @media screen and (min-width: 576px) {
+            .container {
+                background-color: lightgreen;
+                width: 80%;
+                margin: auto;
+            }
+
+            .item {
+                width: 45%;
+                height: 300px;
+            }
+        }
+
+
+        /* large css */
+        @media screen and (min-width: 768px) {
+            .container {
+                background-color: lightpink;
+                width: 80%;
+                margin: auto;
+            }
+
+            .item {
+                width: 30%;
+                height: 300px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="item">
@@ -65,4 +78,5 @@
         </div>
     </div>
 </body>
+
 </html>
