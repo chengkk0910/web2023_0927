@@ -18,16 +18,68 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
       Open modal
     </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModalLg">
       Open modal modal-lg
     </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModalFull">
       Open modal modal-fullscreen
     </button>
   </div>
 
-  <!-- The Modal -->
+  <!-- The Modal  -->
   <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- The Modal end -->
+
+  <!-- The Modal-lg -->
+  <div class="modal" id="myModalLg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- The Modal-lg end -->
+
+  <!-- The Modal full -->
+  <div class="modal" id="myModalFull">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
 
@@ -50,6 +102,7 @@
       </div>
     </div>
   </div>
+  <!-- The Modal full  end-->
 
 
 </body>
