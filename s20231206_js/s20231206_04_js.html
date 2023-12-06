@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <div class="box bg-danger w-100">
+                <div class="box bg-danger w-100" id="myBox">
 
                 </div>
             </div>
@@ -34,9 +34,33 @@
 
     <!-- body 上面 -->
     <script>
+        // 綁定
         let btnPrimary = document.getElementById('btnPrimary');
-        console.log(btnPrimary);
-        console.log('btnPrimary ok');
+        let btnSuccess = document.getElementById('btnSuccess');
+        let btnDanger = document.getElementById('btnDanger');
+        let btnWarning = document.getElementById('btnWarning');
+        let myBox = document.getElementById('myBox');
+
+        // 動作
+        btnPrimary.addEventListener('click', function () {
+            console.log('btnPrimary ok');
+            myBox.setAttribute('class',"box bg-primary w-100");
+        });
+
+        btnSuccess.addEventListener('click', function () {
+            console.log('btnSuccess ok');
+            myBox.setAttribute('class',"box bg-success w-100");
+        });
+
+        btnDanger.addEventListener('click', function () {
+            console.log('btnDanger ok');
+            myBox.setAttribute('class',"box bg-danger w-100");
+        });
+
+        btnWarning.addEventListener('click', function () {
+            console.log('btnWarning ok');
+            myBox.setAttribute('class',"box bg-warning w-100");
+        });
     </script>
 
 </body>
