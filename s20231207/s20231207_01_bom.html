@@ -10,6 +10,10 @@
 <body id="demo">
     <h2>JavaScript Window</h2>
 
+    <table>
+        tr
+    </table>
+
     <button type="button" id="myBtn">myBtn</button>
     <button type="button" id="closeBtn">closeBtn</button>
 
@@ -23,17 +27,22 @@
         console.log('screenWidth', screenWidth);
         console.log('screenHeight', screenHeight);
 
+        let searchText = "apple";
+
+
+
 
         // 2.動作
         myBtn.addEventListener('click', function () {
-            // window.open('http://w3schools.com');
+            window.open('https://www.merriam-webster.com/dictionary/' + searchText);
+            window.open('https://dictionary.cambridge.org/dictionary/english-chinese-traditional/' + searchText);
 
             // window.location.assign("https://www.w3schools.com");
             // window.location.href = "https://www.w3schools.com";
 
             // replace 無法回到上一頁
             // window常常可以省略
-            window.location.replace("https://www.w3schools.com");
+            // window.location.replace("https://www.w3schools.com");
         });
 
         closeBtn.addEventListener('click', function () {
