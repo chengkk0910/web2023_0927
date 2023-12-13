@@ -23,14 +23,75 @@
     .item {
       width: 150px;
       height: 150px;
+    }
 
+    .my-container {
+      /* background-color: lightpink; */
+      position: relative;
+      height: 90vh;
+      overflow: hidden;
+    }
+
+    #myImg {
+      position: absolute;
+      right: -600px;
+      /* right: 1400px; */
+      bottom: 0px;
+    }
+
+
+
+    .myImgAnimation {
+      position: absolute;
+      right: -600px;
+      /* right: 1400px; */
+      bottom: 0px;
+      animation-name: example;
+      animation-duration: 10s;
+    }
+
+    .myImgAnimationInit {
+      position: absolute;
+      right: -600px;
+      /* right: 1400px; */
+      bottom: 0px;
+    }
+
+
+
+    @keyframes example {
+      0% {
+        /* background-color: red; */
+        right: -500px;
+        bottom: 0px;
+      }
+
+      25% {
+        /* background-color: red; */
+        bottom: 300px;
+        /* transform: rotate(90deg); */
+      }
+
+      75% {
+        /* background-color: red; */
+        bottom: -600px;
+        /* transform: rotate(180deg); */
+
+      }
+
+      100% {
+        /* background-color: lightblue; */
+        right: 1500px;
+        bottom: 0px;
+        /* transform: rotate(0deg); */
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container mt-5">
-    <div class="container mb-5">
+  <div class="container-fluid mt-5 my-container">
+    <div class="mb-5">
       <h1 class="text-center text-warning ">紅 綠 燈</h1>
     </div>
     <div class="row">
@@ -63,8 +124,9 @@
   <script>
     // initFun
     function initFun() {
-      myImg.setAttribute('class', 'd-none');
+      // myImg.setAttribute('class', 'd-none');
       myBtn.setAttribute('class', 'btn btn-primary btn-lg mt-5 d-block');
+      myImg.setAttribute('class', 'myImgAnimationInit');
     }
 
 
@@ -103,6 +165,7 @@
       setTimeout(function () {
         light3.setAttribute('class', 'item bg-success rounded-circle');
         myImg.setAttribute('class', 'd-block');
+        myImg.setAttribute('class', 'myImgAnimation');
       }, 3500);
       // time end
 
@@ -111,6 +174,7 @@
         light1.setAttribute('class', 'item bg-danger rounded-circle');
         light2.setAttribute('class', 'item bg-danger rounded-circle');
         light3.setAttribute('class', 'item bg-danger rounded-circle');
+
 
         initFun();
 
