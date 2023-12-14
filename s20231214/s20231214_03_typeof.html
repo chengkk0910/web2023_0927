@@ -13,46 +13,27 @@
 </head>
 
 <body>
-
+  <input type="text" id="myInput">
 
   <script>
-    // let 變數 宣告一次
-    // const 常數
-
-    let x = 10;
-    console.log('x', x);
-    x = 500;
-    console.log('x', x);
-
-    const yConst = 10;
-    // console.log('yConst', yConst);
-    // yConst = 500;
-    // console.log('yConst', yConst);
-
     const myInput = document.getElementById('myInput');
+
+    x = 'hello';
+    y = 123;
+    console.log('x', x);
+    console.log('x typeof', typeof (x));
+    console.log('y', y);
+    console.log('y typeof', typeof (y));
+    console.log('window', window);
+    console.log('window typeof', typeof (window));
     console.log('myInput', myInput);
-    myInput.value = "55688";
-    // myInput.setAttribute('value', '55688');
-    console.log('myInput', myInput);
-
-    // 綁定用 const 避免 不小心改掉
-
-    // myInput = 123;
-    // console.log('myInput', myInput);
-
-    function aFun() {
-      let testStr = 'Hello aFun';
-      console.log('testStr', testStr);
-    }
-
-    function bFun() {
-      let testStr = 'Hello bFun';
-      console.log('testStr', testStr);
-    }
-
-
-    aFun();
-    bFun();
+    console.log('myInput typeof', typeof (myInput));
+    console.info(myInput);
+    console.dir(myInput);
+    
+    // NaN no a number
+    // null
+    // undefined
 
   </script>
 </body>
