@@ -20,7 +20,7 @@
     function oneFun() {
       // 一次
       setTimeout(function () {
-        console.log('setTimeout');
+        
       });
     }
 
@@ -29,6 +29,12 @@
       console.log('Hello setInterval');
     }, 1000)
 
+
+    // clearInterval關閉重複
+    // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
+    let refreshIntervalId = setInterval(fname, 10000);
+    /* later */
+    clearInterval(refreshIntervalId);
 
 
   </script>
