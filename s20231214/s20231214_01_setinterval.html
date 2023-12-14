@@ -15,12 +15,13 @@
 <body>
 
   <button type="button" id="myBtn" onclick="oneFun();">one</button>
+  <button type="button" id="clearBtn" onclick="clearFun();">clearBtn</button>
 
   <script>
     function oneFun() {
       // 一次
       setTimeout(function () {
-        
+
       });
     }
 
@@ -32,9 +33,16 @@
 
     // clearInterval關閉重複
     // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
-    let refreshIntervalId = setInterval(fname, 10000);
+    function fname() {
+      console.log('hello fname');
+    }
+
+    function clearFun() {
+      clearInterval(refreshIntervalId);
+    }
+    let refreshIntervalId = setInterval(fname, 1000);
     /* later */
-    clearInterval(refreshIntervalId);
+    // clearInterval(refreshIntervalId);
 
 
   </script>
