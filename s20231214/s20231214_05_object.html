@@ -24,6 +24,24 @@
     </tr>
   </table>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mt-3">
+        <input type="text" name="" id="name" class="form-control">
+      </div>
+      <div class="col-6 mt-3">
+        <input type="text" name="" id="mobile" class="form-control">
+      </div>
+      <div class="col-12 mt-3">
+        <input type="text" name="" id="address" class="form-control">
+      </div>
+      <div class="col-12 mt-3">
+        <select name="" id="loves" class="form-control">
+          <option value="value">name</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
   <script>
     let obj = {
@@ -33,8 +51,21 @@
       'arr': ['a1', 'a2', 'a3']
     };
 
+    let studentObj = {
+      'name': 'amy',
+      'mobile': '0911-111-111',
+      'address': 'aaaaaaaaa',
+      'love': ['html', 'css', 'js', 'php']
+    };
+
     const keyID = document.getElementById('keyID');
     const valueID = document.getElementById('valueID');
+
+    const name = document.getElementById('name');
+    const mobile = document.getElementById('mobile');
+    const address = document.getElementById('address');
+    const loves = document.getElementById('loves');
+
 
     console.log('obj', obj);
     console.log('obj["s1"]', obj['s1']);
@@ -44,6 +75,38 @@
     console.log('obj typeof', typeof (obj));
     keyID.innerHTML = 's1';
     valueID.innerHTML = obj.s1;
+
+    console.log('name', name);
+    console.log('mobile', mobile);
+    console.log('address', address);
+    name.value = studentObj.name;
+    mobile.value = studentObj.mobile;
+    address.value = studentObj.address;
+    console.log(studentObj);
+
+    // 建立節點
+    let option = document.createElement("option");
+    // 節點 設定
+    option.text = studentObj.love[0];
+    option.value = studentObj.love[0];
+    // select append
+    loves.appendChild(option);
+
+    // 建立節點
+    let option1 = document.createElement("option");
+    // 節點 設定 attribute
+    option1.text = studentObj.love[1];
+    option1.value = studentObj.love[1];
+    // select append
+    loves.appendChild(option1);
+
+
+    // let option2 = document.createElement("option");
+    // option.text = "Text";
+    // option.value = "myvalue";
+    // loves.appendChild(option2);
+    // mobile
+    // address
 
 
   </script>
