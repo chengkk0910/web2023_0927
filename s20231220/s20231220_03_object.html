@@ -14,41 +14,34 @@
 
 <body>
   <div class="container">
+    <h3>calculator object</h3>
     <div class="row">
-      <div class="col-6">
-        <input type="text" name="" id="">
+      <div class="col-12 col-sm-6 mt-3">
+        <input class="form-control" type="text" name="" id="num1">
+      </div>
+      <div class="col-12 col-sm-6 mt-3">
+        <input class="form-control" type="text" name="" id="num2">
       </div>
     </div>
+    <div class="row mt-3">
+      <div class="col">
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button" id="myBtn">submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <span id="mySpan">result ....</span>
+      </div>
+    </div>
+
   </div>
 
 
 
   <script>
-    let obj = {
-      's1': 'amy',
-      's2': 'bob',
-      's3': 'cat',
-      helloFun: function () {
-        // console.log('Hello Fun');
-        console.log(`Hello ${this.s1}`);
-        console.log('this', this);
-        console.log('obj', obj);
-
-      }
-    }
-
-
-    // 練習 calObj 
-    // num1
-    // num2
-    // sumFun +
-    // subFun -
-    // multiFun *
-    // divFun /
-
-    // let num1 = 5000;
-    // let num2 = 100;
-
+    // init data
     const calObj = {
       num1: 100,
       num2: 50,
@@ -70,6 +63,38 @@
         console.log(`num1 / num2 = ${result}`);
       }
     }
+
+    // 1.綁定
+    let num1 = document.getElementById('num1');
+    let num2 = document.getElementById('num2');
+    let myBtn = document.getElementById('myBtn');
+    let mySpan = document.getElementById('mySpan');
+
+    // 2.動作
+    myBtn.addEventListener('click', function () {
+      // console.log('myBtn ok');
+      let num1Value = Number(num1.value);
+      let num2Value = Number(num2.value);
+      // console.log('num1Value', num1Value);
+      // console.log('num1Value typeof', typeof (num1Value));
+      let result = num1Value + num2Value;
+      console.log('result', result);
+
+    })
+
+
+    // 練習 calObj 
+    // num1
+    // num2
+    // sumFun +
+    // subFun -
+    // multiFun *
+    // divFun /
+
+    // let num1 = 5000;
+    // let num2 = 100;
+
+
 
 
 
