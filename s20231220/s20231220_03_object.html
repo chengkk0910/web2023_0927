@@ -63,11 +63,7 @@
         return result;
         console.log(`num1 * num2 = ${result}`);
       },
-      divFun: function () {
-        let result = this.num1 / this.num2;
-        return result;
-        console.log(`num1 / num2 = ${result}`);
-      }
+      divFun: () => calObj.num1 / calObj.num2
     }
 
     // 1.綁定
