@@ -32,7 +32,9 @@
     </div>
     <div class="row mt-3">
       <div class="col">
-        <span id="mySpan">result ....</span>
+        <span id="mySpan">
+
+        </span>
       </div>
     </div>
 
@@ -53,14 +55,17 @@
       },
       subFun: function () {
         let result = this.num1 - this.num2;
+        return result;
         console.log(`num1 - num2 = ${result}`);
       },
       multiFun: function () {
         let result = this.num1 * this.num2;
+        return result;
         console.log(`num1 * num2 = ${result}`);
       },
       divFun: function () {
         let result = this.num1 / this.num2;
+        return result;
         console.log(`num1 / num2 = ${result}`);
       }
     }
@@ -79,8 +84,19 @@
       calObj.num1 = num1Value;
       calObj.num2 = num2Value;
       // console.log('calObj', calObj);
-      // calObj.sumFun();
-      mySpan.innerText = calObj.sumFun();
+      let getSum = calObj.sumFun();
+      let getSub = calObj.subFun();
+      let getMulti = calObj.multiFun();
+      let getDiv = calObj.divFun();
+      // mySpan.innerText = calObj.sumFun();
+      mySpan.innerHTML =
+        `
+          ${num1Value} + ${num2Value} = ${getSum} <br>
+          ${num1Value} - ${num2Value} = ${getSub} <br>  
+          ${num1Value} * ${num2Value} = ${getMulti} <br>
+          ${num1Value} / ${num2Value} = ${getDiv} <br>
+      `;
+
 
       // console.log('num1Value', num1Value);
       // console.log('num1Value typeof', typeof (num1Value));
