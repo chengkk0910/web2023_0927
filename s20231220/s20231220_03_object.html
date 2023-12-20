@@ -48,7 +48,8 @@
       sumFun: function () {
         // let result = num1 + num2;
         let result = this.num1 + this.num2;
-        console.log(`num1 + num2 = ${result}`);
+        return result;
+        // console.log(`num1 + num2 = ${result}`);
       },
       subFun: function () {
         let result = this.num1 - this.num2;
@@ -75,10 +76,16 @@
       // console.log('myBtn ok');
       let num1Value = Number(num1.value);
       let num2Value = Number(num2.value);
+      calObj.num1 = num1Value;
+      calObj.num2 = num2Value;
+      // console.log('calObj', calObj);
+      // calObj.sumFun();
+      mySpan.innerText = calObj.sumFun();
+
       // console.log('num1Value', num1Value);
       // console.log('num1Value typeof', typeof (num1Value));
-      let result = num1Value + num2Value;
-      console.log('result', result);
+      // let result = num1Value + num2Value;
+      // console.log('result', result);
 
     })
 
