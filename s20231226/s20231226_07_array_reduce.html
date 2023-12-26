@@ -24,15 +24,22 @@
     //  newData = [6,10,10 .....]
     let newData = [];
 
+
+    // find 找第一個
+    let first = data.find(value => {
+      return value > 5;
+    });
+    console.log('first', first);
+
     // reduce
-    let sum = 0;
-    // 1000 初始total
-    sum = data.reduce(function (total, value, index) {
-      console.log('total', total);
-      console.log('value', value);
-      return total + value;
-    },1000);
-    console.log('sum', sum);
+    // let sum = 0;
+    // // 1000 初始total
+    // sum = data.reduce(function (total, value, index) {
+    //   console.log('total', total);
+    //   console.log('value', value);
+    //   return total + value;
+    // },1000);
+    // console.log('sum', sum);
 
 
 
