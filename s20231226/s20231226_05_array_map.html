@@ -31,6 +31,18 @@
     });
     console.log('newData', newData);
 
+    // newMapData
+    let newMapData = [];
+    newMapData = data.map(function (value) {
+      if (value > 5) {
+        return value * 100;
+      } else {
+        return value * 2;
+      }
+    });
+    console.log('newMapData', newMapData);
+
+
 
 
 
