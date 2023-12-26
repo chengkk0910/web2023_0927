@@ -24,6 +24,17 @@
     //  newData = [6,10,10 .....]
     let newData = [];
 
+    // 重複去除
+    newData = data.filter(function (value, index, array) {
+      return array.indexOf(value) === index;
+    });
+    console.log('newData', newData);
+
+    // indexOf value找key
+    const fruits = ["Apple", "Orange", "Apple", "Mango"];
+    let position = fruits.indexOf("Mango");
+    console.log('position', position);
+
 
     // find 找第一個
     let first = data.find(value => {
