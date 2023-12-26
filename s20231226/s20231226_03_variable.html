@@ -18,30 +18,20 @@
 
 
   <script>
-    let data = [
-      {
-        'order': 's20231226001',
-        'price': 1000,
-      },
-      {
-        'order': 's20231226002',
-        'price': 5000,
-      },
-      {
-        'order': 's20231226003',
-        'price': 20000,
-      }
-    ];
-    console.log('data', data);
-    let sum = 0;
-    data.forEach(function (value, key) {
-      console.log('key', key);
-      console.log('value', value);
-      console.log('value.price', value.price);
-      sum += value.price;
-    });
+    let obj = {
+      10: 'amy_10',
+      yyy: 'Hello_yyy'
+    }
+    let x = 10;
+    let y = "yyy"
 
-    console.log('sum', sum);
+    console.log('obj[10]', obj[10]);
+    console.log('obj[x]', obj[x]);
+
+    console.log('obj["yyy"]', obj['yyy']);
+    console.log('obj[y]', obj[y]);
+
+    // key 用 變數取代
 
 
 
