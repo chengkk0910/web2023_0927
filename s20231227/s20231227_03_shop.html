@@ -90,6 +90,13 @@
 
 
   <script>
+    function item1Fun() {
+      let getItem1Price = Number(item1Price.value);
+      let getItem1Num = Number(item1Num.value);
+      let resultItem1Total = getItem1Price * getItem1Num;
+      item1Total.value = resultItem1Total;
+    }
+
     const item1Price = document.getElementById('item1Price');
     const item1Num = document.getElementById('item1Num');
     const item1Total = document.getElementById('item1Total');
@@ -101,15 +108,14 @@
     const item3Total = document.getElementById('item3Total');
 
 
+    // item1
     item1Price.addEventListener('change', function () {
-      console.log('item1Price change');
+      item1Fun();
     });
-
     item1Num.addEventListener('change', function () {
-      console.log('item1Num change');
+      item1Fun();
     });
 
-    item1Total.value = 123;
 
 
   </script>
