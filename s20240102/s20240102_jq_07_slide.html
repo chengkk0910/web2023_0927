@@ -175,15 +175,25 @@
 
       console.log('myBtn', myBtn);
       // init
-      pageContainer.hide();      
+      pageContainer.hide();
 
-      myBtn.hover(function () {
+      myBtn.click(function () {
         console.log('this', this);
         let getDataPage = $(this).attr('data-page');
         console.log('getDataPage', getDataPage);
 
-        pageContainer.hide();
-        $(getDataPage).show();
+        // pageContainer.hide('slow', function () {
+        //   // $(getDataPage).fadeIn(3000);
+        //   // alert('123');
+        //   $(getDataPage).fadeIn(3000);
+        // });
+
+        pageContainer.slideUp(2000);
+
+        setTimeout(function () {
+          $(getDataPage).slideDown(3000);
+        }, 2000)
+
       });
 
 
