@@ -43,7 +43,21 @@
             <input type="number" class="form-control my-total" name="" id="item1Total" value="100" readonly>
           </td>
         </tr>
-        
+        <tr>
+          <td>
+            <img src="https://picsum.photos/id/25/160/120" alt="" srcset="">
+          </td>
+          <td>
+            <input type="number" class="form-control my-price" name="" id="item1Price" value="200">
+          </td>
+          <td>
+            <input type="number" class="form-control my-num" name="" id="item1Num" value="1">
+          </td>
+          <td>
+            <input type="number" class="form-control my-total" name="" id="item1Total" value="200" readonly>
+          </td>
+        </tr>
+
       </tbody>
     </table>
   </div>
@@ -56,13 +70,33 @@
 
   <script>
     $(document).ready(function () {
+
+      function sumFun() {
+        let sum = 0;
+        myTotal.each(function (index, element) {
+          console.log('index', index);
+          console.log('element', element);
+          console.log('this', this);
+          let getValue = Number($(this).val());
+          console.log('getValue', getValue);
+          sum += getValue;
+        });
+        console.log('sum', sum);
+      }
+
       const myPrice = $('.my-price');
       const myNum = $('.my-num');
       const myTotal = $('.my-total');
+
       // item1Price.val('123');
       console.log('myPrice', myPrice);
       console.log('myNum', myNum);
       console.log('myTotal', myTotal);
+      // console.log('myTotal[0]', myTotal[0]);
+      // console.log('myTotal[1]', myTotal[1]);
+
+      // init 初始化
+      sumFun();
 
       myNum.change(function () {
 
@@ -91,6 +125,9 @@
         nowTotal.val(resultTotal);
         // console.log('getItem1Price', getItem1Price);
         // console.log('typeof', typeof (getItem1Price));
+
+        // change時重新呼叫
+        sumFun();
       });
     });
 
