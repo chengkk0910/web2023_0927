@@ -25,7 +25,7 @@
     <div class="row">
       <div class="col-12 col-sm-4">
         <div class="d-grid gap-2">
-          <button data-ad="#ad1" data-ani="toggle" class="myBtn btn btn-primary" type="button">Button</button>
+          <button data-ad="#ad1" data-ani="toggle" class="myBtn btn btn-primary" type="button">toggle Button</button>
         </div>
         <div class="" id="ad1">
           AD1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit accusamus incidunt at quidem nesciunt
@@ -39,7 +39,8 @@
       </div>
       <div class="col-12 col-sm-4">
         <div class="d-grid gap-2">
-          <button data-ad="#ad2" data-ani="slideToggle" class="myBtn btn btn-primary" type="button">Button</button>
+          <button data-ad="#ad2" data-ani="fadeToggle" class="myBtn btn btn-primary" type="button">fadeToggle
+            Button</button>
         </div>
         <div class="" id="ad2">
           AD2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit accusamus incidunt at quidem nesciunt
@@ -53,7 +54,8 @@
       </div>
       <div class="col-12 col-sm-4">
         <div class="d-grid gap-2">
-          <button data-ad="#ad3" data-ani="fadeToggle" class="myBtn btn btn-primary" type="button">Button</button>
+          <button data-ad="#ad3" data-ani="slideToggle" class="myBtn btn btn-primary" type="button">slideToggle
+            Button</button>
         </div>
         <div class="" id="ad3">
           AD3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit accusamus incidunt at quidem nesciunt
@@ -91,7 +93,7 @@
             $(getDataAd).toggle(3000);
             break;
           case 'fadeToggle':
-            $(getDataAd).toggle(3000);
+            $(getDataAd).fadeToggle(3000);
             break;
           case 'slideToggle':
             $(getDataAd).slideToggle(3000);
