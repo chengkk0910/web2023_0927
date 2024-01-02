@@ -34,13 +34,13 @@
             <img src="https://picsum.photos/id/26/160/120" alt="" srcset="">
           </td>
           <td>
-            <input type="text" class="form-control" name="" id="item1Price">
+            <input type="number" class="form-control" name="" id="item1Price" value="100">
           </td>
           <td>
-            <input type="text" class="form-control" name="" id="item1Num">
+            <input type="number" class="form-control" name="" id="item1Num" value="1">
           </td>
           <td>
-            <input type="text" class="form-control" name="" id="item1Total">
+            <input type="number" class="form-control" name="" id="item1Total" value="100" readonly>
           </td>
         </tr>
       </tbody>
@@ -58,9 +58,18 @@
       const item1Price = $('#item1Price');
       const item1Num = $('#item1Num');
       const item1Total = $('#item1Total');
+      // item1Price.val('123');
       console.log('item1Price', item1Price);
       console.log('item1Num', item1Num);
       console.log('item1Total', item1Total);
+
+      item1Num.change(function () {
+        let getItem1Price = Number(item1Price.val());
+        let getItem1Num = Number(item1Num.val());
+        let getItem1Total = Number(item1Total.val());
+        console.log('getItem1Price', getItem1Price);
+        console.log('typeof', typeof (getItem1Price));
+      });
     });
 
   </script>
